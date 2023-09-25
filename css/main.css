@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  line-height: 1.5;
+}
+
+nav {
+  display: flex;
+}
+nav .logo {
+  flex: 1;
+}
+nav ul {
+  flex: 3;
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul a {
+  text-transform: uppercase;
+  color: #000;
+}/*# sourceMappingURL=main.css.map */
