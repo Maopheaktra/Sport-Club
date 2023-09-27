@@ -45,109 +45,61 @@ nav ul a:hover {
 
 #contact-us {
   display: flex;
-  height: 120vh;
+  height: 150vh;
+}
+#contact-us .contact-box {
+  background-color: #eecbed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
 }
 #contact-us form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-#contact-us form .form-left {
-  flex: 0.9;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  text-align: justify;
-}
-#contact-us form .form-left h2 {
-  text-align: center;
-}
-#contact-us form .form-left span {
-  margin: 25px;
-  font-size: 15px;
-  margin-left: 15px;
-}
-#contact-us form .form-right {
-  background: rgb(31, 137, 166);
-<<<<<<< HEAD
-  width: 35%;
-  height: 80%;
-=======
-  width: 36%;
-  height: 90%;
->>>>>>> f64ca454a5145bdcd9daf1c8a03aaa280486663a
-  padding: 10px;
-  border-radius: 25px;
-  margin-right: 55px;
-}
-#contact-us form .form-right h2 {
-  text-align: center;
-  color: white;
-}
-#contact-us form .form-right P {
-  text-align: center;
-  font-size: 10px;
-}
-#contact-us form .form-right .user-name {
-  display: flex;
-  padding: 20px;
-  gap: 30px;
-  margin-left: 15px;
-}
-#contact-us form .form-right .user-name input {
-  width: 100%;
-  padding: 5px;
-}
-#contact-us form .form-right .user-email input,
-#contact-us form .form-right .user-number input,
-#contact-us form .form-right .user-role input {
-  width: 95%;
-  padding: 5px;
-  margin-bottom: 15px;
-  margin-left: 6px;
-}
-#contact-us form .form-right .message textarea {
-  width: 97%;
-  padding: 1px;
-  margin-bottom: 10px;
+  padding: 2px 4px;
+  width: 60%;
+  max-width: 600px;
   border-radius: 10px;
-  margin-left: 6px;
 }
-#contact-us form .form-right button[type=submit] {
-  background-color: blue;
-  color: white;
-  width: 98%;
-  height: 30px;
-  padding: 8px;
-  border-radius: 5px;
-  margin-left: 5px;
-}
-#contact-us form .form-right button:hover {
-  background: white;
-  color: black;
-}
-#contact-us form iframe {
-  width: 100%;
-}
-#contact-us form iframe .mapouter {
-  width: 100%;
-}
-#contact-us form iframe .gmap_canvas {
-  background: none;
-  width: 100%;
-  height: 400px;
-}
-#contact-us form iframe .gmap_iframe {
-  width: 600px;
-  height: 400px;
-  margin-top: 20px;
-}
-#contact-us form iframe .google-map > h1 {
+#contact-us form h2 {
   text-align: center;
+  color: #e65b00;
+  margin-bottom: 20px;
+}
+#contact-us form input,
+#contact-us textarea {
+  border: 0;
+  margin: 10px 0px;
   padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+}
+#contact-us form button {
+  background: white;
+  color: #e65b00;
+  border: 1px solid #e65b00;
+  padding: 15px;
+  font-size: 10px;
+  outline: none;
+  width: 100%;
+  font-weight: bold;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+#contact-us form button:hover {
+  border: 1px solid #e65b00;
+  background: #e65b00;
+  color: white;
 }
 
 #footer {
-  height: 50vh;
+  height: 40vh;
   margin: 2px;
   display: flex;
   background: rgb(225, 220, 220);
@@ -319,12 +271,11 @@ nav ul a:hover {
 }
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
-<<<<<<< HEAD
 }
 
 nav {
   display: flex;
-  background: white;
+  z-index: 100;
   height: 12vh;
   position: sticky;
   top: 0;
@@ -355,8 +306,6 @@ nav ul a {
 nav ul a:hover {
   color: red;
   border-bottom: 1px solid red;
-=======
->>>>>>> f64ca454a5145bdcd9daf1c8a03aaa280486663a
 }
 
 #home {
