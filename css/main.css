@@ -10,7 +10,7 @@
 
 nav {
   display: flex;
-  background: white;
+  z-index: 100;
   height: 12vh;
   position: sticky;
   top: 0;
@@ -36,11 +36,13 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
-<<<<<<< HEAD
-  color: #000;
+  color: rgb(13, 13, 13);
+}
+nav ul a:hover {
+  color: red;
+  border-bottom: 1px solid red;
 }
 
-<<<<<<< HEAD
 #contact-us {
   display: flex;
   height: 120vh;
@@ -65,10 +67,10 @@ nav ul a {
   margin-left: 15px;
 }
 #contact-us form .form-right {
+  background: rgb(31, 137, 166);
   width: 36%;
   height: 90%;
   padding: 10px;
-  background: rgb(31, 137, 166);
   border-radius: 25px;
   margin-right: 55px;
 }
@@ -114,13 +116,13 @@ nav ul a {
   margin-left: 6px;
 }
 #contact-us form .form-right button[type=submit] {
+  background-color: blue;
+  color: white;
   width: 98%;
   height: 35px;
   padding: 8px;
   border-radius: 5px;
   margin-left: 5px;
-  background-color: blue;
-  color: white;
 }
 #contact-us form .form-right button:hover {
   background: white;
@@ -145,9 +147,6 @@ nav ul a {
 #contact-us form iframe .google-map > h1 {
   text-align: center;
   padding: 20px;
-}
-#contact-us form footer {
-  background: salmon;
 }
 
 #footer {
@@ -193,7 +192,8 @@ nav ul a {
 #footer .social img {
   margin-top: 25px;
   gap: 25px;
-=======
+}
+
 #sport {
   display: flex;
   flex-direction: column;
@@ -305,6 +305,7 @@ nav ul a {
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
+  background: rgba(104, 104, 187, 0.507);
 }
 #gym .gyms .card img {
   border-radius: 20px;
@@ -321,12 +322,6 @@ nav ul a {
 }
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
-=======
-  color: rgb(13, 13, 13);
-}
-nav ul a:hover {
-  color: red;
-  border-bottom: 1px solid red;
 }
 
 #home {
@@ -413,6 +408,4 @@ button:hover {
 }
 #about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
   display: flex;
->>>>>>> 38818b7d4d0c3d679f9e9ea3ab4db1b604cbd463
->>>>>>> 71665fd699a5615683e5f3b7e2dbdd2e7477b407
 }/*# sourceMappingURL=main.css.map */
