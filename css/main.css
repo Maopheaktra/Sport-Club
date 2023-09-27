@@ -10,7 +10,7 @@
 
 nav {
   display: flex;
-  background: white;
+  background: rgb(94, 198, 211);
   height: 12vh;
   position: sticky;
   top: 0;
@@ -36,8 +36,11 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
-<<<<<<< HEAD
-  color: #000;
+  color: rgb(13, 13, 13);
+}
+nav ul a:hover {
+  color: red;
+  border-bottom: 1px solid red;
 }
 
 #sport {
@@ -167,7 +170,36 @@ nav ul a {
 }
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
-=======
+}
+
+nav {
+  display: flex;
+  background: rgb(94, 198, 211);
+  height: 12vh;
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 125px;
+  height: 55px;
+  margin-left: 50px;
+}
+nav ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul a {
+  text-transform: uppercase;
   color: rgb(13, 13, 13);
 }
 nav ul a:hover {
@@ -259,5 +291,4 @@ button:hover {
 }
 #about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
   display: flex;
->>>>>>> 38818b7d4d0c3d679f9e9ea3ab4db1b604cbd463
 }/*# sourceMappingURL=main.css.map */
