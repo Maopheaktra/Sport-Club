@@ -36,8 +36,13 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
-  color: #000;
+  color: rgb(13, 13, 13);
 }
+nav ul a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
 #contact-us {
   display: flex;
   height: 120vh;
@@ -62,10 +67,10 @@ nav ul a {
   margin-left: 15px;
 }
 #contact-us form .form-right {
-  width: 36%;
-  height: 90%;
-  padding: 10px;
   background: rgb(31, 137, 166);
+  width: 35%;
+  height: 80%;
+  padding: 10px;
   border-radius: 25px;
   margin-right: 55px;
 }
@@ -89,16 +94,8 @@ nav ul a {
 }
 #contact-us form .form-right .user-email input,
 #contact-us form .form-right .user-number input,
-#contact-us form .form-right .user-club input,
-#contact-us form .form-right .user-role input,
-#contact-us form .form-right .user-sport input {
+#contact-us form .form-right .user-role input {
   width: 95%;
-  padding: 5px;
-  margin-bottom: 15px;
-  margin-left: 6px;
-}
-#contact-us form .form-right .user-member select {
-  width: 97.5%;
   padding: 5px;
   margin-bottom: 15px;
   margin-left: 6px;
@@ -111,13 +108,13 @@ nav ul a {
   margin-left: 6px;
 }
 #contact-us form .form-right button[type=submit] {
+  background-color: blue;
+  color: white;
   width: 98%;
-  height: 35px;
+  height: 30px;
   padding: 8px;
   border-radius: 5px;
   margin-left: 5px;
-  background-color: blue;
-  color: white;
 }
 #contact-us form .form-right button:hover {
   background: white;
@@ -143,10 +140,51 @@ nav ul a {
   text-align: center;
   padding: 20px;
 }
-#contact-us form footer {
-  background: salmon;
-}
 
+#footer {
+  height: 50vh;
+  margin: 2px;
+  display: flex;
+  background: rgb(225, 220, 220);
+  justify-content: space-around;
+}
+#footer .footer-left {
+  flex: 1;
+  flex-direction: column;
+  margin-left: 25px;
+  margin: 20px;
+}
+#footer .footer-left img {
+  margin-left: 70px;
+}
+#footer .footer-left p {
+  text-align: justify;
+}
+#footer .footer-center {
+  margin: 35px;
+  justify-content: center;
+}
+#footer .footer-center img {
+  margin-top: 20px;
+}
+#footer .footer-center span {
+  font-size: 15px;
+}
+#footer .footer-right {
+  margin: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#footer .social {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  padding: 1px;
+}
+#footer .social img {
+  margin-top: 25px;
+  gap: 25px;
+}
 
 #sport {
   display: flex;
@@ -259,6 +297,7 @@ nav ul a {
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
+  background: rgba(104, 104, 187, 0.507);
 }
 #gym .gyms .card img {
   border-radius: 20px;
@@ -275,6 +314,36 @@ nav ul a {
 }
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+nav {
+  display: flex;
+  background: white;
+  height: 12vh;
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 125px;
+  height: 55px;
+  margin-left: 50px;
+}
+nav ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul a {
+  text-transform: uppercase;
   color: rgb(13, 13, 13);
 }
 nav ul a:hover {
@@ -366,49 +435,4 @@ button:hover {
 }
 #about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
   display: flex;
-}
-/*# sourceMappingURL=main.css.map */
-#footer {
-  height: 50vh;
-  margin: 2px;
-  display: flex;
-  background: rgb(225, 220, 220);
-  justify-content: space-around;
-}
-#footer .footer-left {
-  flex: 1;
-  flex-direction: column;
-  margin-left: 25px;
-  margin: 20px;
-}
-#footer .footer-left img {
-  margin-left: 70px;
-}
-#footer .footer-left p {
-  text-align: justify;
-}
-#footer .footer-center {
-  margin: 35px;
-  justify-content: center;
-}
-#footer .footer-center img {
-  margin-top: 20px;
-}
-#footer .footer-center span {
-  font-size: 15px;
-}
-#footer .footer-right {
-  margin: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-#footer .social {
-  display: inline-block;
-  flex-wrap: wrap;
-  margin-right: 10px;
-  padding: 1px;
-}
-#footer .social img {
-  margin-top: 25px;
-  gap: 25px;
-}
+}/*# sourceMappingURL=main.css.map */
