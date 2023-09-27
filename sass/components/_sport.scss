@@ -1,0 +1,24 @@
+#sport {
+    display: flex;
+    flex-direction: column;
+    .sport-header {
+        display: flex;
+        flex-direction: column ;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .sport-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        @import 'card';
+    }
+}

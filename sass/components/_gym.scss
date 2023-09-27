@@ -1,0 +1,44 @@
+#gym {
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .gyms {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+
+        .card {
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 20px;
+            img{
+                border-radius: 20px;
+            }
+            .card-content {
+                margin-top: 30px;
+
+                h2 {
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+       
+    }
+}
