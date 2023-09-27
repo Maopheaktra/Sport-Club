@@ -10,19 +10,33 @@
 
 nav {
   display: flex;
+  background: white;
+  height: 12vh;
+  position: sticky;
+  top: 0;
 }
 nav .logo {
   flex: 1;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 125px;
+  height: 55px;
+  margin-left: 50px;
 }
 nav ul {
-  flex: 3;
+  flex: 2;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 nav ul li {
-  padding: 10px;
+  list-style: none;
 }
 nav ul a {
   text-transform: uppercase;
+<<<<<<< HEAD
   color: #000;
 }
 
@@ -153,4 +167,97 @@ nav ul a {
 }
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
+=======
+  color: rgb(13, 13, 13);
+}
+nav ul a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+#home {
+  height: 100vh;
+  padding: 100px;
+  background-image: url(/images/home/MKT_0472_SCP_HouseofSport_0604_Carousel-experience_d0607113112.gif);
+  background-position: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+}
+
+.homepag {
+  background: rgba(0, 0, 0, 0.5333333333);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+button {
+  background: rgb(31, 137, 166);
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+button:hover {
+  background: red;
+  color: white;
+}
+
+#about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#about h1 {
+  display: flex;
+  justify-content: center;
+}
+#about .abouttop {
+  display: flex;
+  gap: 10px;
+}
+#about .abouttop .abouttopleft {
+  background: rgb(230, 223, 223);
+  border-radius: 8px;
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+}
+#about .abouttop .abouttopright {
+  background: rgb(230, 223, 223);
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+#about .mis-vis {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 30px;
+}
+#about .mis-vis .our-mis-vis {
+  display: flex;
+  flex-direction: column;
+}
+#about .mis-vis .our-mis-vis .mission, #about .mis-vis .our-mis-vis .vision {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #000;
+}
+#about .mis-vis .our-mis-vis .mission h2, #about .mis-vis .our-mis-vis .vision h2 {
+  display: flex;
+  justify-content: start;
+}
+#about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
+  display: flex;
+>>>>>>> 38818b7d4d0c3d679f9e9ea3ab4db1b604cbd463
 }/*# sourceMappingURL=main.css.map */
