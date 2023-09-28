@@ -10,6 +10,10 @@
 
 nav {
   display: flex;
+<<<<<<< HEAD
+  background: rgb(6, 153, 156);
+=======
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
   z-index: 100;
   height: 12vh;
   position: sticky;
@@ -36,26 +40,40 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
+<<<<<<< HEAD
+  color: rgb(17, 16, 16);
+}
+nav ul a:hover {
+  background: red;
+  padding: 4px;
+  color: white;
+  border-bottom: 1px solid white;
+=======
   color: rgb(13, 13, 13);
 }
 nav ul a:hover {
   color: red;
   border-bottom: 1px solid red;
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
 }
 
 #contact-us {
   display: flex;
-  height: 120vh;
+  height: 150vh;
+}
+#contact-us .contact-box {
+  background-color: #eecbed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
 }
 #contact-us form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-#contact-us form .form-left {
-  flex: 0.9;
+  background-color: white;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   text-align: justify;
 }
 #contact-us form .form-left h2 {
@@ -112,9 +130,14 @@ nav ul a:hover {
   width: 97%;
   padding: 1px;
   margin-bottom: 10px;
+=======
+  padding: 2px 4px;
+  width: 60%;
+  max-width: 600px;
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
   border-radius: 10px;
-  margin-left: 6px;
 }
+<<<<<<< HEAD
 #contact-us form .form-right button[type=submit] {
   background-color: blue;
   color: white;
@@ -145,12 +168,47 @@ nav ul a:hover {
   margin-top: 20px;
 }
 #contact-us form iframe .google-map > h1 {
+=======
+#contact-us form h2 {
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
   text-align: center;
-  padding: 20px;
+  color: #e65b00;
+  margin-bottom: 20px;
 }
+<<<<<<< HEAD
+=======
+#contact-us form input,
+#contact-us textarea {
+  border: 0;
+  margin: 10px 0px;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  border-radius: 10px;
+  resize: none;
+}
+#contact-us form button {
+  background: white;
+  color: #e65b00;
+  border: 1px solid #e65b00;
+  padding: 15px;
+  font-size: 10px;
+  outline: none;
+  width: 100%;
+  font-weight: bold;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+#contact-us form button:hover {
+  border: 1px solid #e65b00;
+  background: #e65b00;
+  color: white;
+}
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
 
 #footer {
-  height: 50vh;
+  height: 40vh;
   margin: 2px;
   display: flex;
   background: rgb(225, 220, 220);
@@ -345,10 +403,55 @@ nav ul a:hover {
   color: white;
 }
 
+nav {
+  display: flex;
+<<<<<<< HEAD
+  background: rgb(6, 153, 156);
+=======
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
+  z-index: 100;
+  height: 12vh;
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 125px;
+  height: 55px;
+  margin-left: 50px;
+}
+nav ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul a {
+  text-transform: uppercase;
+<<<<<<< HEAD
+  color: rgb(17, 16, 16);
+=======
+  color: rgb(13, 13, 13);
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
+}
+nav ul a:hover {
+  background: red;
+  padding: 4px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
 #home {
   height: 100vh;
   padding: 100px;
-  background-image: url(/images/home/MKT_0472_SCP_HouseofSport_0604_Carousel-experience_d0607113112.gif);
+  background-image: url(https://www.jta.org/wp-content/uploads/2021/12/12-2-21-SportsMiraclesMain-2160x1200.jpg);
   background-position: -2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,13 +461,20 @@ nav ul a:hover {
 
 .homepag {
   background: rgba(0, 0, 0, 0.5333333333);
+  width: 70%;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  padding: 20px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.homepag:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 button {
-  background: rgb(31, 137, 166);
+  background: rgb(6, 153, 156);
   width: 150px;
   height: 40px;
   border-radius: 8px;
@@ -372,6 +482,8 @@ button {
 }
 button:hover {
   background: red;
+}
+button:hover li a {
   color: white;
 }
 
@@ -429,6 +541,7 @@ button:hover {
 }
 #about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
   display: flex;
+<<<<<<< HEAD
 }
 
 body {
@@ -628,3 +741,25 @@ body .card:hover {
 }
 
 @impo;/*# sourceMappingURL=main.css.map */
+=======
+<<<<<<< HEAD
+}
+
+.our-club {
+  padding-bottom: 20px;
+}
+.our-club img {
+  width: 100%;
+  height: 50hv;
+}
+.our-club .picture-out {
+  display: flex;
+  flex-wrap: wrap;
+}
+.our-club .picture-out img {
+  width: 12.5%;
+  height: 25vh;
+=======
+>>>>>>> 4b9839dbf13de9b8466329744cbf49ab9fbfd0c2
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> 45592df1a86060faa69fbd488c07b9962795b723
