@@ -10,7 +10,8 @@
 
 nav {
   display: flex;
-  background: rgb(94, 198, 211);
+  background: rgb(6, 153, 156);
+  z-index: 100;
   height: 12vh;
   position: sticky;
   top: 0;
@@ -36,14 +37,15 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
-  color: rgb(13, 13, 13);
+  color: rgb(17, 16, 16);
 }
 nav ul a:hover {
-  color: red;
-  border-bottom: 1px solid red;
+  background: red;
+  padding: 4px;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
-<<<<<<< HEAD
 #contact-us {
   display: flex;
   height: 120vh;
@@ -68,10 +70,10 @@ nav ul a:hover {
   margin-left: 15px;
 }
 #contact-us form .form-right {
+  background: rgb(31, 137, 166);
   width: 36%;
   height: 90%;
   padding: 10px;
-  background: rgb(31, 137, 166);
   border-radius: 25px;
   margin-right: 55px;
 }
@@ -117,13 +119,13 @@ nav ul a:hover {
   margin-left: 6px;
 }
 #contact-us form .form-right button[type=submit] {
+  background-color: blue;
+  color: white;
   width: 98%;
   height: 35px;
   padding: 8px;
   border-radius: 5px;
   margin-left: 5px;
-  background-color: blue;
-  color: white;
 }
 #contact-us form .form-right button:hover {
   background: white;
@@ -148,9 +150,6 @@ nav ul a:hover {
 #contact-us form iframe .google-map > h1 {
   text-align: center;
   padding: 20px;
-}
-#contact-us form footer {
-  background: salmon;
 }
 
 #footer {
@@ -196,7 +195,8 @@ nav ul a:hover {
 #footer .social img {
   margin-top: 25px;
   gap: 25px;
-=======
+}
+
 #sport {
   display: flex;
   flex-direction: column;
@@ -308,6 +308,7 @@ nav ul a:hover {
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
+  background: rgba(104, 104, 187, 0.507);
 }
 #gym .gyms .card img {
   border-radius: 20px;
@@ -328,7 +329,8 @@ nav ul a:hover {
 
 nav {
   display: flex;
-  background: rgb(94, 198, 211);
+  background: rgb(6, 153, 156);
+  z-index: 100;
   height: 12vh;
   position: sticky;
   top: 0;
@@ -354,17 +356,19 @@ nav ul li {
 }
 nav ul a {
   text-transform: uppercase;
-  color: rgb(13, 13, 13);
+  color: rgb(17, 16, 16);
 }
 nav ul a:hover {
-  color: red;
-  border-bottom: 1px solid red;
+  background: red;
+  padding: 4px;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 #home {
   height: 100vh;
   padding: 100px;
-  background-image: url(/images/home/MKT_0472_SCP_HouseofSport_0604_Carousel-experience_d0607113112.gif);
+  background-image: url(https://www.jta.org/wp-content/uploads/2021/12/12-2-21-SportsMiraclesMain-2160x1200.jpg);
   background-position: -2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,13 +378,20 @@ nav ul a:hover {
 
 .homepag {
   background: rgba(0, 0, 0, 0.5333333333);
+  width: 70%;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  padding: 20px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.homepag:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 button {
-  background: rgb(31, 137, 166);
+  background: rgb(6, 153, 156);
   width: 150px;
   height: 40px;
   border-radius: 8px;
@@ -388,6 +399,8 @@ button {
 }
 button:hover {
   background: red;
+}
+button:hover li a {
   color: white;
 }
 
@@ -445,9 +458,20 @@ button:hover {
 }
 #about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
   display: flex;
-<<<<<<< HEAD
-=======
->>>>>>> 38818b7d4d0c3d679f9e9ea3ab4db1b604cbd463
->>>>>>> 71665fd699a5615683e5f3b7e2dbdd2e7477b407
->>>>>>> 62aa87662f72553198cdeccdfd822f053833318f
+}
+
+.our-club {
+  padding-bottom: 20px;
+}
+.our-club img {
+  width: 100%;
+  height: 50hv;
+}
+.our-club .picture-out {
+  display: flex;
+  flex-wrap: wrap;
+}
+.our-club .picture-out img {
+  width: 12.5%;
+  height: 25vh;
 }/*# sourceMappingURL=main.css.map */

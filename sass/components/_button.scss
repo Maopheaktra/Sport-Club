@@ -1,12 +1,17 @@
 button{
-    background: rgb(31, 137, 166);
+    background:rgb(6, 153, 156);
     width: 150px;
     height: 40px;
     border-radius: 8px;
     margin-top: 20px;
-    &:hover{
+    &:hover{   
         background: red;
-        color: white;
+        li{
+           a{
+               color: white;
+           }
+        } 
+        
 
     }
 

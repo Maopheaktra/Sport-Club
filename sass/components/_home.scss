@@ -1,7 +1,7 @@
 #home{
     height: 100vh;
     padding: 100px;
-    background-image: url(/images/home/MKT_0472_SCP_HouseofSport_0604_Carousel-experience_d0607113112.gif);
+    background-image: url(https://www.jta.org/wp-content/uploads/2021/12/12-2-21-SportsMiraclesMain-2160x1200.jpg);
     background-position: -2 ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +10,15 @@
 }
 .homepag{
     background: #00000088;
+    width: 70%;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 100px;
+    &:hover{
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+   
 }
