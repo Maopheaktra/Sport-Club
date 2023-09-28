@@ -1,0 +1,26 @@
+.video{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    iframe{
+        width: 60%;
+        height: 90vh;
+    }
+    div{
+        width: 30%;
+        height: 30vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        box-shadow:  rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 20px;
+    }
+    p{
+        padding: 20px;
+    }
+    a{
+        text-align: center;
+        padding: 20px;
+    }
+}

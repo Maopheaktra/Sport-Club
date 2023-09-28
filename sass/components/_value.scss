@@ -1,0 +1,41 @@
+.value{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .card-value{
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        .card{
+            width: 200px;
+            height: 45vh;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            background: whitesmoke;
+            border-radius: 20px;
+            img{
+                display: flex;
+                align-items: center;
+                border: 1px solid teal;
+                border-radius: 10px;
+            }
+            span{
+                text-align: center;
+            }
+            div{
+                p{
+                text-align: justify;
+            }
+            }
+           
+        }
+    }
+}
