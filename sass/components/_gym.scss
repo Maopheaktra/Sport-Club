@@ -11,13 +11,14 @@
         display: flex;
         flex-direction: column;
         margin: 50px;
-
+        p{
+            padding: 20px;
+        }
         .card {
             margin: 20px;
             display: flex;
             justify-content: space-around;
             border-radius: 20px;
-            background: rgba(104, 104, 187, 0.507);
             img{
                 border-radius: 20px;
             }
@@ -30,16 +31,25 @@
                 }
 
                 p {
-                    text-align: center;
+                    padding: 20px;
                 }
+              
             }
 
         }
 
         .card:nth-child(even) {
             flex-direction: row-reverse;
+            p{
+                padding: 20px;
+            }
+            .card-content{
+                .button{
+                    margin-left: auto;
+                }
+            }
         }
 
-       
+        
     }
 }
