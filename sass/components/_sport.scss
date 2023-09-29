@@ -1,7 +1,6 @@
 
 #sport {
     margin: 20px;  
-    // margin: 20px;
     display: flex;
     flex-direction: column;
     .sport-header {
@@ -17,7 +16,7 @@
         }
         img{
           width: 100%;
-          height: 80%;
+          height: 100%;
         }
     
     }
@@ -84,6 +83,7 @@
         &:hover h2 {
           inset: auto auto 220px 30px;
           transition: inset .3s ease-out;
+          display: none;
         }
         
         &:hover p, &:hover a {
