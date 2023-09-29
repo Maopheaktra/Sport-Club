@@ -132,6 +132,7 @@ iframe .google-map > h1 {
 }
 
 #footer {
+  width: auto;
   height: 50vh;
   margin: 2px;
   display: flex;
@@ -149,7 +150,7 @@ iframe .google-map > h1 {
 }
 #footer .footer-left p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 15px;
 }
 #footer .footer-center {
   margin: 35px;
