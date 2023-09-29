@@ -7,8 +7,13 @@
     p{
         text-align: center;
     }
+    .gymtop{
+        img{
+            width: 100%;
+        }
+    }
     .gyms {
-        margin: 50px;
+        // margin: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -19,15 +24,22 @@
         .card {
             margin: 20px;
             width: 80%;
+            height: 50vh;
             display: flex;
             justify-content: space-around;
             border-radius: 20px;
             img{
+                width: 25%;
+                height: 50vh;
                 border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
             }
             .card-content {
                 margin-top: 30px;
-
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
                 h2 {
                     text-align: center;
                     text-transform: uppercase;
@@ -48,7 +60,6 @@
             flex-direction: row-reverse;
          
             .card-content{
-                margin-left: 100px;   
                 p{
                     padding: 20px;
                 }
@@ -58,8 +69,13 @@
             }
         } 
         .card:nth-child(odd){
-            p{
-                padding: 20px;
+            .card-content{
+                p{
+                    padding: 20px;
+                }
+                a{
+                    text-align: right;
+                }
             }
         }
     }

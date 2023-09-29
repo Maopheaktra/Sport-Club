@@ -188,7 +188,6 @@ iframe .google-map > h1 {
 }
 
 #sport {
-  margin: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -202,6 +201,9 @@ iframe .google-map > h1 {
 #sport .sport-header p {
   text-align: center;
 }
+#sport .sport-header img {
+  width: 100%;
+}
 #sport .sport-content {
   display: flex;
   flex-wrap: wrap;
@@ -209,15 +211,14 @@ iframe .google-map > h1 {
   align-items: center;
 }
 #sport .sport-content .card {
-  margin: 20px;
-  background: teal;
+  background: rgb(31, 137, 166);
   width: 24rem;
-  height: 36rem;
+  height: 32rem;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  color: white;
+  color: black;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 #sport .sport-content .card img {
@@ -225,7 +226,7 @@ iframe .google-map > h1 {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 89%;
+  height: 80%;
   top: 0;
   left: 0;
   opacity: 0.9;
@@ -239,6 +240,7 @@ iframe .google-map > h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
+  padding: 30px;
 }
 #sport .sport-content .card p, #sport .sport-content .card a {
   position: absolute;
@@ -248,11 +250,16 @@ iframe .google-map > h1 {
 }
 #sport .sport-content .card p {
   inset: auto auto 80px 30px;
+  padding: 20px;
 }
 #sport .sport-content .card a {
   inset: auto auto 40px 30px;
   color: inherit;
   text-decoration: none;
+}
+#sport .sport-content .card:hover p {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.336);
 }
 #sport .sport-content .card:hover h2 {
   inset: auto auto 220px 30px;
@@ -261,16 +268,11 @@ iframe .google-map > h1 {
 #sport .sport-content .card:hover p, #sport .sport-content .card:hover a {
   opacity: 1;
   transition: opacity 0.5s 0.1s ease-in;
+  color: white;
 }
 #sport .sport-content .card:hover img {
   transition: opacity 0.3s ease-in;
   opacity: 1;
-}
-#sport .sport-content .card:nth-child(7) {
-  margin-left: 200px;
-}
-#sport .sport-content .card:nth-child(8) {
-  margin-right: 200px;
 }
 #sport .material-symbols-outlined {
   vertical-align: middle;
@@ -286,8 +288,10 @@ iframe .google-map > h1 {
 #gym p {
   text-align: center;
 }
+#gym .gymtop img {
+  width: 100%;
+}
 #gym .gyms {
-  margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -299,15 +303,22 @@ iframe .google-map > h1 {
 #gym .gyms .card {
   margin: 20px;
   width: 80%;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
 }
 #gym .gyms .card img {
+  width: 25%;
+  height: 50vh;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 #gym .gyms .card .card-content {
   margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 #gym .gyms .card .card-content h2 {
   text-align: center;
@@ -322,17 +333,17 @@ iframe .google-map > h1 {
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
 }
-#gym .gyms .card:nth-child(even) .card-content {
-  margin-left: 100px;
-}
 #gym .gyms .card:nth-child(even) .card-content p {
   padding: 20px;
 }
 #gym .gyms .card:nth-child(even) .card-content a {
   text-align: right;
 }
-#gym .gyms .card:nth-child(odd) p {
+#gym .gyms .card:nth-child(odd) .card-content p {
   padding: 20px;
+}
+#gym .gyms .card:nth-child(odd) .card-content a {
+  text-align: right;
 }
 
 #home {
@@ -502,24 +513,88 @@ body .group .card span {
   text-align: center;
   text-transform: uppercase;
 }
+body .value {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .value h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+body .value .card-value {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .value .card-value .card {
+  margin-top: 10px;
+  width: 20%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 20px;
+}
+body .value .card-value .card p {
+  padding: 20px;
+}
 body .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.value {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.value h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.value .card-value {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.value .card-value .card {
+  margin-top: 10px;
+  width: 20%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 20px;
+}
+.value .card-value .card p {
+  padding: 20px;
 }
 
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.body {
+body {
   display: flex;
   flex-direction: column;
+}
+body .group {
+  display: flex;
   justify-content: space-around;
 }
-.body .group {
+body .group .card {
   margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  background: lightblue;
+}
+body .group .card img {
+  margin: 20px;
+  border-radius: 20px;
 }
 
 .our-club {
@@ -536,4 +611,29 @@ body .card:hover {
 .our-club .picture-out img {
   width: 12.5%;
   height: 25vh;
+}
+
+.video {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.video iframe {
+  width: 100%;
+}
+.video div {
+  margin: 10px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.video div p {
+  padding: 20px;
+}
+.video div a {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

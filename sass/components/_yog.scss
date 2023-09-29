@@ -1,11 +1,16 @@
-.body{
+body{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     .group{
-        margin: 20px;
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
+        .card{
+            margin: 20px;
+            background: lightblue;
+          img{
+            margin: 20px;
+            border-radius: 20px;
+          }
+        }
     }
 }
