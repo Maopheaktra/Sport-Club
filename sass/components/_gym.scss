@@ -8,14 +8,17 @@
         text-align: center;
     }
     .gyms {
+        margin: 50px;
         display: flex;
         flex-direction: column;
-        margin: 50px;
-        p{
+        justify-content: space-around;
+        align-items: center;
+        p{  
             padding: 20px;
         }
         .card {
             margin: 20px;
+            width: 80%;
             display: flex;
             justify-content: space-around;
             border-radius: 20px;
@@ -33,6 +36,9 @@
                 p {
                     padding: 20px;
                 }
+                a{
+                    text-align: center;
+                }
               
             }
 
@@ -40,16 +46,21 @@
 
         .card:nth-child(even) {
             flex-direction: row-reverse;
+         
+            .card-content{
+                margin-left: 100px;   
+                p{
+                    padding: 20px;
+                }
+                a{
+                    text-align: right;
+                }
+            }
+        } 
+        .card:nth-child(odd){
             p{
                 padding: 20px;
             }
-            .card-content{
-                .button{
-                    margin-left: auto;
-                }
-            }
         }
-
-        
     }
 }

@@ -30,10 +30,9 @@
         overflow: hidden;
         cursor: pointer;
         position: relative;
-        color: black;
+        color: white;
         box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-       
-      img {
+        img {
           position: absolute;
           object-fit: cover;
           width: 100%;
@@ -87,7 +86,12 @@
         }
       
       }
-      
+      .card:nth-child(7){
+        margin-left: 200px;
+      }
+      .card:nth-child(8){
+        margin-right: 200px;
+      }
     }
       .material-symbols-outlined {
         vertical-align: middle;

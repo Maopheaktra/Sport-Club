@@ -1,36 +1,11 @@
-body{
+.body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    .topic{
-        display: flex;
-        flex-direction: column;
-        h1{
-            padding: 20px;
-        }
-       
-    }
     .group{
-        margin-top: 20px;
+        margin: 20px;
         display: flex;
         flex-direction: row;
-        .card{
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            border-radius: 10px;
-            span{
-                padding: 10px;
-                text-align: center;
-                text-transform: uppercase;
-
-            }
-        }
+        justify-content: space-around;
     }
-
-    @import 'video';
-    @import 'value';
-    @import 'card';
 }

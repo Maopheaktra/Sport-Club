@@ -13,6 +13,7 @@ nav {
   justify-content: space-between;
   background: rgb(6, 153, 156);
   z-index: 100;
+  width: 100%;
   height: 12vh;
   position: sticky;
   top: 0;
@@ -215,7 +216,7 @@ iframe .google-map > h1 {
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  color: black;
+  color: white;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 #sport .sport-content .card img {
@@ -264,6 +265,12 @@ iframe .google-map > h1 {
   transition: opacity 0.3s ease-in;
   opacity: 1;
 }
+#sport .sport-content .card:nth-child(7) {
+  margin-left: 200px;
+}
+#sport .sport-content .card:nth-child(8) {
+  margin-right: 200px;
+}
 #sport .material-symbols-outlined {
   vertical-align: middle;
 }
@@ -279,15 +286,18 @@ iframe .google-map > h1 {
   text-align: center;
 }
 #gym .gyms {
+  margin: 50px;
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  justify-content: space-around;
+  align-items: center;
 }
 #gym .gyms p {
   padding: 20px;
 }
 #gym .gyms .card {
   margin: 20px;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
@@ -305,53 +315,23 @@ iframe .google-map > h1 {
 #gym .gyms .card .card-content p {
   padding: 20px;
 }
+#gym .gyms .card .card-content a {
+  text-align: center;
+}
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
 }
-#gym .gyms .card:nth-child(even) p {
+#gym .gyms .card:nth-child(even) .card-content {
+  margin-left: 100px;
+}
+#gym .gyms .card:nth-child(even) .card-content p {
   padding: 20px;
 }
-#gym .gyms .card:nth-child(even) .card-content .button {
-  margin-left: auto;
+#gym .gyms .card:nth-child(even) .card-content a {
+  text-align: right;
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  background: rgb(6, 153, 156);
-  z-index: 100;
-  height: 12vh;
-  position: sticky;
-  top: 0;
-}
-nav .logo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-nav .logo img {
-  width: 125px;
-  height: 55px;
-  margin-left: 50px;
-}
-nav ul {
-  flex: 2;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-nav ul li {
-  list-style: none;
-}
-nav ul a {
-  text-transform: uppercase;
-  color: rgb(17, 16, 16);
-}
-nav ul a:hover {
-  background: red;
-  padding: 4px;
-  color: white;
-  border-bottom: 1px solid white;
+#gym .gyms .card:nth-child(odd) p {
+  padding: 20px;
 }
 
 #home {
@@ -521,268 +501,24 @@ body .group .card span {
   text-align: center;
   text-transform: uppercase;
 }
-body .video {
-  margin: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-body .video iframe {
-  width: 60%;
-  height: 90vh;
-}
-body .video div {
-  width: 30%;
-  height: 30vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 20px;
-}
-body .video p {
-  padding: 20px;
-}
-body .video a {
-  text-align: center;
-  padding: 20px;
-}
-body .value {
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-}
-body .value h2 {
-  text-transform: uppercase;
-  text-align: center;
-}
-body .value .card-value {
-  margin: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-body .value .card-value .card {
-  width: 200px;
-  height: 45vh;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  background: whitesmoke;
-  border-radius: 20px;
-}
-body .value .card-value .card img {
-  display: flex;
-  align-items: center;
-  border: 1px solid teal;
-  border-radius: 10px;
-}
-body .value .card-value .card span {
-  text-align: center;
-}
-body .value .card-value .card div p {
-  text-align: justify;
-}
 body .card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-body .topic {
-  display: flex;
-  flex-direction: column;
-}
-body .topic h1 {
-  padding: 20px;
-}
-body .group {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
-body .group .card {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 10px;
-}
-body .group .card span {
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-}
-body .video {
-  margin: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-body .video iframe {
-  width: 60%;
-  height: 90vh;
-}
-body .video div {
-  width: 30%;
-  height: 30vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 20px;
-}
-body .video p {
-  padding: 20px;
-}
-body .video a {
-  text-align: center;
-  padding: 20px;
-}
-body .value {
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-}
-body .value h2 {
-  text-transform: uppercase;
-  text-align: center;
-}
-body .value .card-value {
-  margin: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-body .value .card-value .card {
-  width: 200px;
-  height: 45vh;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  background: whitesmoke;
-  border-radius: 20px;
-}
-body .value .card-value .card img {
-  display: flex;
-  align-items: center;
-  border: 1px solid teal;
-  border-radius: 10px;
-}
-body .value .card-value .card span {
-  text-align: center;
-}
-body .value .card-value .card div p {
-  text-align: justify;
-}
-body .card:hover {
+.card:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-body {
+.body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-body .topic {
-  display: flex;
-  flex-direction: column;
-}
-body .topic h1 {
-  padding: 20px;
-}
-body .group {
-  margin-top: 20px;
+.body .group {
+  margin: 20px;
   display: flex;
   flex-direction: row;
-}
-body .group .card {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  border-radius: 10px;
-}
-body .group .card span {
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-}
-body .video {
-  margin: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-body .video iframe {
-  width: 60%;
-  height: 90vh;
-}
-body .video div {
-  width: 30%;
-  height: 30vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  background: white;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 20px;
-}
-body .video p {
-  padding: 20px;
-}
-body .video a {
-  text-align: center;
-  padding: 20px;
-}
-body .value {
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-}
-body .value h2 {
-  text-transform: uppercase;
-  text-align: center;
-}
-body .value .card-value {
-  margin: 20px;
-  display: flex;
-  justify-content: space-around;
-}
-body .value .card-value .card {
-  width: 200px;
-  height: 45vh;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: center;
-  background: whitesmoke;
-  border-radius: 20px;
-}
-body .value .card-value .card img {
-  display: flex;
-  align-items: center;
-  border: 1px solid teal;
-  border-radius: 10px;
-}
-body .value .card-value .card span {
-  text-align: center;
-}
-body .value .card-value .card div p {
-  text-align: justify;
-}
-body .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .our-club {
