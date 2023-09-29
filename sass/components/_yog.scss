@@ -3,12 +3,11 @@ body{
     flex-direction: column;
     .group{
         display: flex;
-        justify-content: space-around;
         .card{
-            margin: 20px;
-            background: lightblue;
+          margin: 10px;
+          background: lightblue;
+          border-radius: 20px;
           img{
-            margin: 20px;
             border-radius: 20px;
           }
         }

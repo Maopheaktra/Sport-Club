@@ -10,6 +10,7 @@
     .gymtop{
         img{
             width: 100%;
+            height: 100vh;
         }
     }
     .gyms {
@@ -46,10 +47,20 @@
                 }
 
                 p {
+                    font-weight: 200;
                     padding: 20px;
                 }
                 a{
+                    width: 100px;
+                    padding: 10px;
                     text-align: center;
+                    background: lightblue;
+                    color:black;
+                    border-radius: 10px;
+                }
+                a:hover{
+                    background: red;
+                    color: white;
                 }
               
             }
