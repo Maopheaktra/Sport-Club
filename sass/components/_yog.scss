@@ -1,36 +1,16 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    .topic{
-        display: flex;
-        flex-direction: column;
-        h1{
-            padding: 20px;
-        }
-       
-    }
     .group{
-        margin-top: 20px;
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
         .card{
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            border-radius: 10px;
-            span{
-                padding: 10px;
-                text-align: center;
-                text-transform: uppercase;
-
-            }
+            margin: 20px;
+            background: lightblue;
+          img{
+            margin: 20px;
+            border-radius: 20px;
+          }
         }
     }
-
-    @import 'video';
-    @import 'value';
-    @import 'card';
 }
