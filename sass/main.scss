@@ -7,8 +7,6 @@
     border:none;
     line-height: 1.5;
 }
-
-
 @import 'components/navbar';
 @import 'components/contact-us';
 @import 'components/footer';
@@ -23,3 +21,4 @@
 @import 'components/yog';
 @import 'components/ourclub';
 @import 'components/video';
+@import 'mixins/responsive';
