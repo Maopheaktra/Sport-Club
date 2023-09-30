@@ -15,6 +15,11 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
+  position: fixed;
+  background: rgb(6, 153, 156);
+  z-index: 100;
+  width: 100%;
+  height: 12vh;
   position: sticky;
   top: 0;
 }
@@ -50,22 +55,23 @@ nav ul a:hover {
 
 #contact-us {
   display: flex;
-  height: 135vh;
+  height: 155vh;
+  margin-top: 0;
 }
 #contact-us .contact-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
-  width: 220vh;
+  width: 190vh;
 }
 #contact-us form {
   background-color: rgba(231, 241, 239, 0.925);
   flex-direction: column;
   display: flex;
-  width: 90%;
-  height: 80%;
+  width: 50%;
+  height: 75%;
   padding: 5px 4px;
   max-width: 550px;
   border-radius: 15px;
@@ -74,13 +80,30 @@ nav ul a:hover {
   text-align: center;
   color: black;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 5px;
 }
 #contact-us form h2:hover {
   color: #e65b00;
 }
 #contact-us form p {
   font-size: 15px;
+}
+#contact-us form input {
+  width: 92.8%;
+  height: 15px;
+}
+#contact-us .user-club,
+#contact-us .user-member {
+  margin-bottom: 10px;
+}
+#contact-us select {
+  color: rgb(128, 128, 128);
+  width: 100%;
+  height: 55px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 #contact-us form input,
 #contact-us textarea {
@@ -92,17 +115,20 @@ nav ul a:hover {
   font-size: 16px;
   border-radius: 10px;
 }
+#contact-us textarea {
+  width: 92.8%;
+  margin-top: 15px;
+}
 #contact-us form button {
   background: rgb(31, 137, 166);
   color: white;
-  font-weight: bold;
-  border: 1px solid #3d05e4;
-  margin: 15px auto 0;
+  border: 1px solid #4118bb;
+  margin: 7px;
   padding: 5px;
-  font-size: 15px;
-  width: 40%;
-  border-radius: 30px;
-  margin-left: 30%;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 35%;
 }
 #contact-us form button:hover {
   border: 1px solid #e65b00;
@@ -132,12 +158,12 @@ iframe .google-map > h1 {
 }
 
 #footer {
+  background: rgb(225, 220, 220);
+  display: flex;
+  justify-content: space-around;
   width: auto;
   height: 50vh;
   margin: 2px;
-  display: flex;
-  background: rgb(225, 220, 220);
-  justify-content: space-around;
 }
 #footer .footer-left {
   flex: 1;
@@ -434,7 +460,7 @@ iframe .google-map > h1 {
 #home {
   height: 100vh;
   width: 100%;
-  background-image: url(https://www.jta.org/wp-content/uploads/2021/12/12-2-21-SportsMiraclesMain-2160x1200.jpg);
+  background-image: url(https://a-len.ru/upload/webp/iblock/79f/79fc097fdb1035f3eac9ac3597e26b49.webp);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -481,14 +507,16 @@ button:hover li a {
   justify-content: center;
 }
 #about .abouttop {
+  align-items: center;
   display: flex;
   gap: 10px;
 }
 #about .abouttop .abouttopleft {
   background: rgb(230, 223, 223);
-  border-radius: 8px;
   display: flex;
   flex: 1;
+  height: 30vh;
+  border-radius: 8px;
   padding: 20px;
   margin: 20px;
 }
@@ -690,7 +718,7 @@ body .group .card img {
 }
 .our-club .ourimg img {
   margin: 5px;
-  width: 11.5%;
+  width: 11.7%;
   height: 25vh;
 }
 

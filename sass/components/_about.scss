@@ -7,15 +7,17 @@
         display: flex;
         justify-content: center;
     }
-
     .abouttop{
+        align-items: center;
         display: flex;
         gap: 10px;
         .abouttopleft{ 
             background:rgb(230, 223, 223);
-            border-radius: 8px;
             display: flex;
             flex: 1;
+            height: 30vh;
+            border-radius: 8px;
+            
             padding: 20px;
             margin: 20px;
         }

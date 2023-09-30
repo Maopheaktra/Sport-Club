@@ -1,10 +1,12 @@
 #footer {
-  width:auto;
+  background: rgb(225, 220, 220);
+  display: flex;
+  justify-content: space-around;
+  width: auto;
   height: 50vh;
   margin: 2px;
-  display: flex;
-  background: rgb(225, 220, 220);
-  justify-content: space-around;
+
+
 
   .footer-left {
     flex: 1;
@@ -35,11 +37,13 @@
 
     }
   }
-  .footer-center h2:hover{
-    color:red;
+
+  .footer-center h2:hover {
+    color: red;
   }
-  .footer-center span:hover{
-    color:blue;
+
+  .footer-center span:hover {
+    color: blue;
   }
 
   .footer-right {
@@ -48,8 +52,9 @@
     margin-bottom: 20px;
 
   }
-  .footer-right h2:hover{
-    color:red;
+
+  .footer-right h2:hover {
+    color: red;
   }
 
   .social {
@@ -64,6 +69,4 @@
     }
 
   }
-
-
 }
