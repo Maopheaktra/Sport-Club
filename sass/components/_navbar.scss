@@ -9,7 +9,13 @@ nav {
     display: flex;
     justify-content: space-between;
     z-index: 1000;
+<<<<<<< HEAD
     background: rgb(6, 153, 156);
+=======
+
+    background: rgb(6, 153, 156);
+
+>>>>>>> 18f87fea8a4e3b2b6dc85e8db879c36afe0004af
     position: fixed;
     top: 0;
     @include responsive('tablet'){
@@ -19,6 +25,10 @@ nav {
     }
     .logo{
     background:rgb(6, 153, 156);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 18f87fea8a4e3b2b6dc85e8db879c36afe0004af
     z-index: 100;
     width: 100%;
     height: 12vh;
