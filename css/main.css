@@ -15,15 +15,11 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
-<<<<<<< HEAD
-  position: fixed;
-=======
   background: rgb(6, 153, 156);
   z-index: 100;
   width: 100%;
   height: 12vh;
   position: sticky;
->>>>>>> bfadd59ad80f1f51a5c741eb5f55b71e452d24e2
   top: 0;
 }
 nav .logo {
@@ -692,14 +688,6 @@ body .group .card img {
     flex-direction: column;
   }
 }
-<<<<<<< HEAD
-@media screen and (max-width: ) {
-  .video {
-    flex-direction: column;
-  }
-}
-=======
->>>>>>> 87fddc05ec928b1fbbc4212ff202b14ab2edbec5
 .video iframe {
   width: 100%;
 }
