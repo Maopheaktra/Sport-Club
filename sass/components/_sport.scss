@@ -1,4 +1,4 @@
-
+@import "../mixins/responsive";
 #sport {
     margin: 20px;  
     // margin: 20px;
@@ -11,6 +11,7 @@
 
         h1 {
             text-align: center;
+            text-transform: uppercase;
         }
 
         p {
@@ -19,7 +20,15 @@
         img{
           width: 100%;
           height: 100%;
-        }
+        } 
+        @include responsive ('tablet'){
+          width: 80%;
+          height: 80%;
+       }
+       @include responsive ('mobile'){
+         width: 60%;
+         height: 100%;
+       }
     
     }
 
@@ -32,24 +41,43 @@
         margin: 20px;
         background:rgb(31, 137, 166);
         width: 24rem;
-        height: 36rem;
+        height: 36rem;        
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
         position: relative;
         color: black;
         box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+        @include responsive ('tablet'){
+          margin: 15px;
+          width: 70px;
+          height: 70vh;
+        }
+        @include responsive ('mobile'){
+          margin: 10px;
+          width: 30px;
+          height: 30vh;
+        }
         img {
           position: absolute;
           object-fit: cover;
           width: 100%;
           height: 80%;
+          @include responsive ('tablet'){
+            width: 80%;
+            height: 70%;
+          }
+          @include responsive ('mobile'){
+            width: 60%;
+            height: 60%;
+          }
           top: 0;
           left: 0;
           opacity: 0.9;
           transition: opacity .2s ease-out;
+
         }
-      
+        
         h2 {
           position: absolute;
           inset: auto auto 30px 30px;
@@ -71,6 +99,12 @@
         p {
           inset: auto auto 80px 30px;
           padding: 30px;
+          @include responsive ('tablet'){
+            padding: 20px;
+          }
+          @include responsive ('mobile'){
+            padding: 15px;
+          }
         }
         
         a {
@@ -102,9 +136,21 @@
       }
       .card:nth-child(7){
         margin-left: 200px;
+        @include responsive('tablet'){
+          margin-left:  0px;
+        }
+        @include responsive ('mobile'){
+          margin-left: 0px;
+        }
       }
       .card:nth-child(8){
         margin-right: 200px;
+        @include responsive ('tablet'){
+          margin-left: 0px;
+        }
+        @include responsive ('mobile'){
+          margin-left: 0px;
+        }
       }
     }
       .material-symbols-outlined {
