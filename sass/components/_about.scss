@@ -3,16 +3,28 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    h1{
+
+    h1 {
         display: flex;
         justify-content: center;
     }
+<<<<<<< HEAD
+
+    .abouttop {
+        display: flex;
+        gap: 10px;
+
+        .abouttopleft {
+            background: rgb(230, 223, 223);
+            border-radius: 8px;
+=======
     .abouttop{
         align-items: center;
         display: flex;
         gap: 10px;
         .abouttopleft{ 
             background:rgb(230, 223, 223);
+>>>>>>> 79538d62b759ee41ed24eaab2ef3b7cd4152ddc0
             display: flex;
             flex: 1;
             height: 30vh;
@@ -21,8 +33,9 @@
             padding: 20px;
             margin: 20px;
         }
-        .abouttopright{
-            background:rgb(230, 223, 223);
+
+        .abouttopright {
+            background: rgb(230, 223, 223);
             display: flex;
             border-radius: 8px;
             flex-direction: column;
@@ -33,28 +46,34 @@
             margin: 20px;
         }
     }
-    .mis-vis{
+
+    .mis-vis {
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin: 30px; 
-        .our-mis-vis{
+        margin: 30px;
+
+        .our-mis-vis {
             display: flex;
             flex-direction: column;
-            .mission,.vision{
+
+            .mission,
+            .vision {
                 display: flex;
                 flex-direction: column;
-                border-bottom: 1px solid #000;           
-                h2{
+                border-bottom: 1px solid #000;
+
+                h2 {
                     display: flex;
                     justify-content: start;
                 }
-                p{
+
+                p {
                     display: flex;
                 }
-        
+
             }
-            
+
         }
     }
 }

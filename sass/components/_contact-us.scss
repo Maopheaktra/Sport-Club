@@ -14,7 +14,7 @@
     }
 
     form {
-        background-color: rgba(231, 241, 239, 0.925);
+        background-color: rgb(231, 241, 239);
         flex-direction: column;
         display: flex;
         width: 50%;
@@ -44,6 +44,7 @@
         height: 15px;
 
     }
+
     .user-club,
     .user-member {
         margin-bottom: 10px;
@@ -80,7 +81,6 @@
 
     form button {
         background: rgb(31, 137, 166);
-        color: white;
         border: 1px solid #4118bb;
         margin: 7px;
         padding: 5px;
@@ -91,11 +91,22 @@
 
     }
 
+    form button a {
+        color: white;
+    }
+
     form button:hover {
         border: 1px solid #e65b00;
         background: red;
         color: white;
     }
+
+    form button a:hover {
+
+        color: white;
+    }
+
+
 }
 
 iframe {

@@ -1,13 +1,22 @@
+<<<<<<< HEAD
 
 @import '../mixins/responsive';
 nav{
     background:rgb(6, 153, 156);
+=======
+nav {
+    background: rgb(6, 153, 156);
+>>>>>>> 0b1e96951c1a8d43a9737029558ea6c5426a998f
     height: 12vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
+<<<<<<< HEAD
+    background: rgb(6, 153, 156);
+=======
     position: fixed;
+<<<<<<< HEAD
     top: 0;
     @include responsive('tablet'){
        width: 80%;
@@ -15,27 +24,43 @@ nav{
        background: red;
     }
     .logo{
+=======
+    background:rgb(6, 153, 156);
+>>>>>>> 79538d62b759ee41ed24eaab2ef3b7cd4152ddc0
+    z-index: 100;
+    width: 100%;
+    height: 12vh;
+    position: sticky;
+    top: 0;
+
+    .logo {
+>>>>>>> 0b1e96951c1a8d43a9737029558ea6c5426a998f
         flex: 1;
         display: flex;
         align-items: center;
-        img{
+
+        img {
             width: 125px;
             height: 55px;
             margin-left: 50px;
         }
     }
-    ul{
+
+    ul {
         flex: 2;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        li{
+
+        li {
             list-style: none;
         }
-        a{
+
+        a {
             text-transform: uppercase;
             color: rgb(17, 16, 16);
-            &:hover{
+
+            &:hover {
                 background: red;
                 padding: 4px;
                 color: white;
