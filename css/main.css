@@ -14,15 +14,8 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-<<<<<<< HEAD
   z-index: 1000;
-=======
-  background: rgb(6, 153, 156);
-  z-index: 100;
-  width: 100%;
-  height: 12vh;
->>>>>>> 14497a52c811cc86a1f9d972cc6bde5785932bbb
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 nav .logo {
@@ -195,6 +188,7 @@ iframe .google-map > h1 {
 }
 
 #sport {
+  margin: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -346,20 +340,17 @@ iframe .google-map > h1 {
 #gym .gyms .card:nth-child(even) .card-content a {
   text-align: right;
 }
-<<<<<<< HEAD
-=======
 #gym .gyms .card:nth-child(odd) .card-content p {
   padding: 20px;
 }
 #gym .gyms .card:nth-child(odd) .card-content a {
   text-align: right;
 }
->>>>>>> 14497a52c811cc86a1f9d972cc6bde5785932bbb
 
 #home {
   height: 100vh;
   width: 100%;
-  background-image: url(https://www.jta.org/wp-content/uploads/2021/12/12-2-21-SportsMiraclesMain-2160x1200.jpg);
+  background-image: url(https://a-len.ru/upload/webp/iblock/79f/79fc097fdb1035f3eac9ac3597e26b49.webp);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,14 +397,16 @@ button:hover li a {
   justify-content: center;
 }
 #about .abouttop {
+  align-items: center;
   display: flex;
   gap: 10px;
 }
 #about .abouttop .abouttopleft {
   background: rgb(230, 223, 223);
-  border-radius: 8px;
   display: flex;
   flex: 1;
+  height: 30vh;
+  border-radius: 8px;
   padding: 20px;
   margin: 20px;
 }
@@ -616,7 +609,7 @@ body .group .card img {
 }
 .our-club .ourimg img {
   margin: 5px;
-  width: 11.5%;
+  width: 11.7%;
   height: 25vh;
 }
 
