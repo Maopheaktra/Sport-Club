@@ -294,6 +294,12 @@ iframe .google-map > h1 {
     height: 70%;
   }
 }
+@media screen and (max-width: ) {
+  #sport .sport-content .card img {
+    width: 60%;
+    height: 60%;
+  }
+}
 #sport .sport-content .card h2 {
   position: absolute;
   inset: auto auto 30px 30px;
@@ -313,6 +319,16 @@ iframe .google-map > h1 {
 #sport .sport-content .card p {
   inset: auto auto 80px 30px;
   padding: 30px;
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card p {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card p {
+    padding: 15px;
+  }
 }
 #sport .sport-content .card a {
   inset: auto auto 40px 30px;
@@ -728,8 +744,28 @@ body .group .card img {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: ) {
+  .video {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: ) {
+  .video {
+    flex-direction: column;
+  }
+}
 .video iframe {
   width: 100%;
+}
+@media screen and (max-width: ) {
+  .video iframe {
+    width: 60%;
+  }
+}
+@media screen and (max-width: ) {
+  .video iframe {
+    width: 50%;
+  }
 }
 .video div {
   margin: 10px;
@@ -745,4 +781,10 @@ body .group .card img {
 }
 .video div a {
   text-align: center;
+}
+@media screen and (max-width: ) {
+  .video div {
+    margin: 5px;
+    height: 25vh;
+  }
 }/*# sourceMappingURL=main.css.map */

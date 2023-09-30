@@ -6,8 +6,17 @@
     @include responsive ('tablet'){
         flex-direction: column;
     }
+    @include responsive ('tablet'){
+        flex-direction: column;
+    }
     iframe{
         width: 100%;
+        @include responsive ('tablet'){
+            width: 60%;
+        }
+        @include responsive ('mobile'){
+            width: 50%;
+        }
     }
     div{
         margin: 10px; 
@@ -22,6 +31,11 @@
         }
         a{
             text-align: center;
+        }
+        @include responsive ('tablet'){
+            margin: 5px;
+            height: 25vh;
+            
         }
     }
 }
