@@ -16,6 +16,11 @@ nav {
   justify-content: space-between;
   z-index: 1000;
   position: fixed;
+  background: rgb(6, 153, 156);
+  z-index: 100;
+  width: 100%;
+  height: 12vh;
+  position: sticky;
   top: 0;
 }
 nav .logo {
@@ -50,22 +55,23 @@ nav ul a:hover {
 
 #contact-us {
   display: flex;
-  height: 135vh;
+  height: 155vh;
+  margin-top: 0;
 }
 #contact-us .contact-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
-  width: 220vh;
+  width: 190vh;
 }
 #contact-us form {
   background-color: rgba(231, 241, 239, 0.925);
   flex-direction: column;
   display: flex;
-  width: 90%;
-  height: 80%;
+  width: 50%;
+  height: 75%;
   padding: 5px 4px;
   max-width: 550px;
   border-radius: 15px;
@@ -74,13 +80,30 @@ nav ul a:hover {
   text-align: center;
   color: black;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 5px;
 }
 #contact-us form h2:hover {
   color: #e65b00;
 }
 #contact-us form p {
   font-size: 15px;
+}
+#contact-us form input {
+  width: 92.8%;
+  height: 15px;
+}
+#contact-us .user-club,
+#contact-us .user-member {
+  margin-bottom: 10px;
+}
+#contact-us select {
+  color: rgb(128, 128, 128);
+  width: 100%;
+  height: 55px;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 #contact-us form input,
 #contact-us textarea {
@@ -92,17 +115,20 @@ nav ul a:hover {
   font-size: 16px;
   border-radius: 10px;
 }
+#contact-us textarea {
+  width: 92.8%;
+  margin-top: 15px;
+}
 #contact-us form button {
   background: rgb(31, 137, 166);
   color: white;
-  font-weight: bold;
-  border: 1px solid #3d05e4;
-  margin: 15px auto 0;
+  border: 1px solid #4118bb;
+  margin: 7px;
   padding: 5px;
-  font-size: 15px;
-  width: 40%;
-  border-radius: 30px;
-  margin-left: 30%;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 35%;
 }
 #contact-us form button:hover {
   border: 1px solid #e65b00;
@@ -132,12 +158,12 @@ iframe .google-map > h1 {
 }
 
 #footer {
+  background: rgb(225, 220, 220);
+  display: flex;
+  justify-content: space-around;
   width: auto;
   height: 50vh;
   margin: 2px;
-  display: flex;
-  background: rgb(225, 220, 220);
-  justify-content: space-around;
 }
 #footer .footer-left {
   flex: 1;
@@ -204,6 +230,7 @@ iframe .google-map > h1 {
 }
 #sport .sport-header img {
   width: 100%;
+  height: 100%;
 }
 #sport .sport-content {
   display: flex;
@@ -212,9 +239,10 @@ iframe .google-map > h1 {
   align-items: center;
 }
 #sport .sport-content .card {
+  margin: 20px;
   background: rgb(31, 137, 166);
   width: 24rem;
-  height: 32rem;
+  height: 36rem;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -241,7 +269,7 @@ iframe .google-map > h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 50px;
 }
 #sport .sport-content .card p, #sport .sport-content .card a {
   position: absolute;
@@ -251,7 +279,7 @@ iframe .google-map > h1 {
 }
 #sport .sport-content .card p {
   inset: auto auto 80px 30px;
-  padding: 20px;
+  padding: 30px;
 }
 #sport .sport-content .card a {
   inset: auto auto 40px 30px;
@@ -265,6 +293,7 @@ iframe .google-map > h1 {
 #sport .sport-content .card:hover h2 {
   inset: auto auto 220px 30px;
   transition: inset 0.3s ease-out;
+  display: none;
 }
 #sport .sport-content .card:hover p, #sport .sport-content .card:hover a {
   opacity: 1;
@@ -274,6 +303,12 @@ iframe .google-map > h1 {
 #sport .sport-content .card:hover img {
   transition: opacity 0.3s ease-in;
   opacity: 1;
+}
+#sport .sport-content .card:nth-child(7) {
+  margin-left: 200px;
+}
+#sport .sport-content .card:nth-child(8) {
+  margin-right: 200px;
 }
 #sport .material-symbols-outlined {
   vertical-align: middle;
@@ -291,6 +326,7 @@ iframe .google-map > h1 {
 }
 #gym .gymtop img {
   width: 100%;
+  height: 100vh;
 }
 #gym .gyms {
   display: flex;
@@ -304,14 +340,14 @@ iframe .google-map > h1 {
 #gym .gyms .card {
   margin: 20px;
   width: 80%;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
 }
 #gym .gyms .card img {
-  width: 25%;
-  height: 50vh;
+  width: 30%;
+  height: 40vh;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -326,10 +362,20 @@ iframe .google-map > h1 {
   text-transform: uppercase;
 }
 #gym .gyms .card .card-content p {
+  font-weight: 200;
   padding: 20px;
 }
 #gym .gyms .card .card-content a {
+  width: 100px;
+  padding: 10px;
   text-align: center;
+  background: lightblue;
+  color: black;
+  border-radius: 10px;
+}
+#gym .gyms .card .card-content a:hover {
+  background: red;
+  color: white;
 }
 #gym .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
@@ -589,14 +635,13 @@ body {
 }
 body .group {
   display: flex;
-  justify-content: space-around;
 }
 body .group .card {
-  margin: 20px;
+  margin: 10px;
   background: lightblue;
+  border-radius: 20px;
 }
 body .group .card img {
-  margin: 20px;
   border-radius: 20px;
 }
 
