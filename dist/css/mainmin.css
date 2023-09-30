@@ -18,13 +18,6 @@ nav {
   position: fixed;
   top: 0;
 }
-@media screen and (max-width: ) {
-  nav {
-    width: 80%;
-    height: 10px;
-    background: red;
-  }
-}
 nav .logo {
   flex: 1;
   display: flex;
@@ -69,7 +62,7 @@ nav ul a:hover {
   width: 190vh;
 }
 #contact-us form {
-  background-color: rgba(231, 241, 239, 0.925);
+  background-color: rgb(231, 241, 239);
   flex-direction: column;
   display: flex;
   width: 50%;
@@ -123,7 +116,6 @@ nav ul a:hover {
 }
 #contact-us form button {
   background: rgb(31, 137, 166);
-  color: white;
   border: 1px solid #4118bb;
   margin: 7px;
   padding: 5px;
@@ -132,9 +124,15 @@ nav ul a:hover {
   width: 30%;
   margin-left: 35%;
 }
+#contact-us form button a {
+  color: white;
+}
 #contact-us form button:hover {
   border: 1px solid #e65b00;
   background: red;
+  color: white;
+}
+#contact-us form button a:hover {
   color: white;
 }
 
@@ -226,7 +224,6 @@ iframe .google-map > h1 {
 }
 #sport .sport-header h1 {
   text-align: center;
-  text-transform: uppercase;
 }
 #sport .sport-header p {
   text-align: center;
@@ -234,18 +231,6 @@ iframe .google-map > h1 {
 #sport .sport-header img {
   width: 100%;
   height: 100%;
-}
-@media screen and (max-width: ) {
-  #sport .sport-header {
-    width: 80%;
-    height: 80%;
-  }
-}
-@media screen and (max-width: ) {
-  #sport .sport-header {
-    width: 60%;
-    height: 100%;
-  }
 }
 #sport .sport-content {
   display: flex;
@@ -265,20 +250,6 @@ iframe .google-map > h1 {
   color: black;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: ) {
-  #sport .sport-content .card {
-    margin: 15px;
-    width: 70px;
-    height: 70vh;
-  }
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card {
-    margin: 10px;
-    width: 30px;
-    height: 30vh;
-  }
-}
 #sport .sport-content .card img {
   position: absolute;
   -o-object-fit: cover;
@@ -290,18 +261,6 @@ iframe .google-map > h1 {
   opacity: 0.9;
   transition: opacity 0.2s ease-out;
 }
-@media screen and (max-width: ) {
-  #sport .sport-content .card img {
-    width: 80%;
-    height: 70%;
-  }
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card img {
-    width: 60%;
-    height: 60%;
-  }
-}
 #sport .sport-content .card h2 {
   position: absolute;
   inset: auto auto 30px 30px;
@@ -312,7 +271,8 @@ iframe .google-map > h1 {
   text-transform: uppercase;
   padding: 50px;
 }
-#sport .sport-content .card p, #sport .sport-content .card a {
+#sport .sport-content .card p,
+#sport .sport-content .card a {
   position: absolute;
   opacity: 0;
   max-width: 80%;
@@ -321,16 +281,6 @@ iframe .google-map > h1 {
 #sport .sport-content .card p {
   inset: auto auto 80px 30px;
   padding: 30px;
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card p {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card p {
-    padding: 15px;
-  }
 }
 #sport .sport-content .card a {
   inset: auto auto 40px 30px;
@@ -358,28 +308,8 @@ iframe .google-map > h1 {
 #sport .sport-content .card:nth-child(7) {
   margin-left: 200px;
 }
-@media screen and (max-width: ) {
-  #sport .sport-content .card:nth-child(7) {
-    margin-left: 0px;
-  }
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card:nth-child(7) {
-    margin-left: 0px;
-  }
-}
 #sport .sport-content .card:nth-child(8) {
   margin-right: 200px;
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card:nth-child(8) {
-    margin-left: 0px;
-  }
-}
-@media screen and (max-width: ) {
-  #sport .sport-content .card:nth-child(8) {
-    margin-left: 0px;
-  }
 }
 #sport .material-symbols-outlined {
   vertical-align: middle;
@@ -399,7 +329,7 @@ iframe .google-map > h1 {
   width: 100%;
   height: 100vh;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 860px) {
   #gym .gymtop {
     height: 60vh;
   }
@@ -525,12 +455,12 @@ button:hover li a {
   justify-content: center;
 }
 #about .abouttop {
-  align-items: center;
   display: flex;
   gap: 10px;
 }
 #about .abouttop .abouttopleft {
   background: rgb(230, 223, 223);
+  border-radius: 8px;
   display: flex;
   flex: 1;
   height: 30vh;
@@ -559,16 +489,19 @@ button:hover li a {
   display: flex;
   flex-direction: column;
 }
-#about .mis-vis .our-mis-vis .mission, #about .mis-vis .our-mis-vis .vision {
+#about .mis-vis .our-mis-vis .mission,
+#about .mis-vis .our-mis-vis .vision {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #000;
 }
-#about .mis-vis .our-mis-vis .mission h2, #about .mis-vis .our-mis-vis .vision h2 {
+#about .mis-vis .our-mis-vis .mission h2,
+#about .mis-vis .our-mis-vis .vision h2 {
   display: flex;
   justify-content: start;
 }
-#about .mis-vis .our-mis-vis .mission p, #about .mis-vis .our-mis-vis .vision p {
+#about .mis-vis .our-mis-vis .mission p,
+#about .mis-vis .our-mis-vis .vision p {
   display: flex;
 }
 
@@ -746,7 +679,7 @@ body .group .card img {
   flex-direction: row;
   justify-content: space-between;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 860px) {
   .video {
     flex-direction: column;
   }
