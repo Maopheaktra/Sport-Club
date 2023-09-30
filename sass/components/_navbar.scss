@@ -1,5 +1,12 @@
+<<<<<<< HEAD
+
+@import '../mixins/responsive';
+nav{
+    background:rgb(6, 153, 156);
+=======
 nav {
     background: rgb(6, 153, 156);
+>>>>>>> 0b1e96951c1a8d43a9737029558ea6c5426a998f
     height: 12vh;
     width: 100%;
     display: flex;
@@ -9,6 +16,15 @@ nav {
     background: rgb(6, 153, 156);
 
     position: fixed;
+<<<<<<< HEAD
+    top: 0;
+    @include responsive('tablet'){
+       width: 80%;
+       height: 10px;
+       background: red;
+    }
+    .logo{
+=======
     background:rgb(6, 153, 156);
 
     z-index: 100;
@@ -18,6 +34,7 @@ nav {
     top: 0;
 
     .logo {
+>>>>>>> 0b1e96951c1a8d43a9737029558ea6c5426a998f
         flex: 1;
         display: flex;
         align-items: center;
@@ -51,4 +68,5 @@ nav {
             }
         }
     }
+    
 }
