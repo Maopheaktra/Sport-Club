@@ -5,7 +5,7 @@ $breakpoints:(
     'desktop':1200px,
 );
 @mixin responsive($size){
-    @media screen and (max-width: map-get($breakpoints,size)){
+    @media screen and (max-width: map-get($breakpoints,$size)){
         @content;
     }
 }
