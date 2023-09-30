@@ -5,7 +5,12 @@ nav {
     display: flex;
     justify-content: space-between;
     z-index: 1000;
+<<<<<<< HEAD
     background: rgb(6, 153, 156);
+=======
+    position: fixed;
+    background:rgb(6, 153, 156);
+>>>>>>> 79538d62b759ee41ed24eaab2ef3b7cd4152ddc0
     z-index: 100;
     width: 100%;
     height: 12vh;

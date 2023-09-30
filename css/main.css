@@ -15,6 +15,10 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
+<<<<<<< HEAD
+=======
+  position: fixed;
+>>>>>>> 79538d62b759ee41ed24eaab2ef3b7cd4152ddc0
   background: rgb(6, 153, 156);
   z-index: 100;
   width: 100%;
@@ -228,6 +232,7 @@ iframe .google-map > h1 {
 }
 #sport .sport-header h1 {
   text-align: center;
+  text-transform: uppercase;
 }
 #sport .sport-header p {
   text-align: center;
@@ -235,6 +240,18 @@ iframe .google-map > h1 {
 #sport .sport-header img {
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: ) {
+  #sport .sport-header {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: ) {
+  #sport .sport-header {
+    width: 60%;
+    height: 100%;
+  }
 }
 #sport .sport-content {
   display: flex;
@@ -254,6 +271,20 @@ iframe .google-map > h1 {
   color: black;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: ) {
+  #sport .sport-content .card {
+    margin: 15px;
+    width: 70px;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card {
+    margin: 10px;
+    width: 30px;
+    height: 30vh;
+  }
+}
 #sport .sport-content .card img {
   position: absolute;
   -o-object-fit: cover;
@@ -264,6 +295,12 @@ iframe .google-map > h1 {
   left: 0;
   opacity: 0.9;
   transition: opacity 0.2s ease-out;
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card img {
+    width: 80%;
+    height: 70%;
+  }
 }
 #sport .sport-content .card h2 {
   position: absolute;
@@ -312,8 +349,28 @@ iframe .google-map > h1 {
 #sport .sport-content .card:nth-child(7) {
   margin-left: 200px;
 }
+@media screen and (max-width: ) {
+  #sport .sport-content .card:nth-child(7) {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card:nth-child(7) {
+    margin-left: 0px;
+  }
+}
 #sport .sport-content .card:nth-child(8) {
   margin-right: 200px;
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card:nth-child(8) {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: ) {
+  #sport .sport-content .card:nth-child(8) {
+    margin-left: 0px;
+  }
 }
 #sport .material-symbols-outlined {
   vertical-align: middle;
@@ -333,44 +390,55 @@ iframe .google-map > h1 {
   width: 100%;
   height: 100vh;
 }
-#gym .gyms {
+@media screen and (max-width: ) {
+  #gym .gymtop {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: ) {
+  #gym .gymtop {
+    height: 50vh;
+  }
+}
+
+.gyms {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-#gym .gyms p {
+.gyms p {
   padding: 20px;
 }
-#gym .gyms .card {
+.gyms .card {
   margin: 20px;
   width: 80%;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
 }
-#gym .gyms .card img {
+.gyms .card img {
   width: 30%;
-  height: 40vh;
+  height: 50vh;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-#gym .gyms .card .card-content {
+.gyms .card .card-content {
   margin-top: 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-#gym .gyms .card .card-content h2 {
+.gyms .card .card-content h2 {
   text-align: center;
   text-transform: uppercase;
 }
-#gym .gyms .card .card-content p {
+.gyms .card .card-content p {
   font-weight: 200;
   padding: 20px;
 }
-#gym .gyms .card .card-content a {
+.gyms .card .card-content a {
   width: 100px;
   padding: 10px;
   text-align: center;
@@ -378,30 +446,30 @@ iframe .google-map > h1 {
   color: black;
   border-radius: 10px;
 }
-#gym .gyms .card .card-content a:hover {
+.gyms .card .card-content a:hover {
   background: red;
   color: white;
 }
-#gym .gyms .card:nth-child(even) {
+.gyms .card:nth-child(even) {
   flex-direction: row-reverse;
 }
-#gym .gyms .card:nth-child(even) .card-content p {
+.gyms .card:nth-child(even) .card-content p {
   padding: 20px;
 }
-#gym .gyms .card:nth-child(even) .card-content a {
+.gyms .card:nth-child(even) .card-content a {
   text-align: right;
 }
-#gym .gyms .card:nth-child(odd) .card-content p {
+.gyms .card:nth-child(odd) .card-content p {
   padding: 20px;
 }
-#gym .gyms .card:nth-child(odd) .card-content a {
+.gyms .card:nth-child(odd) .card-content a {
   text-align: right;
 }
 
 #home {
   height: 100vh;
   width: 100%;
-  background-image: url(https://www.jta.org/wp-content/uploads/2021/12/12-2-21-SportsMiraclesMain-2160x1200.jpg);
+  background-image: url(https://a-len.ru/upload/webp/iblock/79f/79fc097fdb1035f3eac9ac3597e26b49.webp);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -448,14 +516,16 @@ button:hover li a {
   justify-content: center;
 }
 #about .abouttop {
+  align-items: center;
   display: flex;
   gap: 10px;
 }
 #about .abouttop .abouttopleft {
   background: rgb(230, 223, 223);
-  border-radius: 8px;
   display: flex;
   flex: 1;
+  height: 30vh;
+  border-radius: 8px;
   padding: 20px;
   margin: 20px;
 }
@@ -660,7 +730,7 @@ body .group .card img {
 }
 .our-club .ourimg img {
   margin: 5px;
-  width: 11.5%;
+  width: 11.7%;
   height: 25vh;
 }
 
