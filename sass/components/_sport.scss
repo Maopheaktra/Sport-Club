@@ -67,6 +67,10 @@
             width: 80%;
             height: 70%;
           }
+          @include responsive ('mobile'){
+            width: 60%;
+            height: 60%;
+          }
           top: 0;
           left: 0;
           opacity: 0.9;
@@ -95,6 +99,12 @@
         p {
           inset: auto auto 80px 30px;
           padding: 30px;
+          @include responsive ('tablet'){
+            padding: 20px;
+          }
+          @include responsive ('mobile'){
+            padding: 15px;
+          }
         }
         
         a {
