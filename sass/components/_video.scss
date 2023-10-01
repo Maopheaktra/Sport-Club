@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include responsive('tablet'){
+        margin-top: 40px;
+    }
+    @include responsive('mobile'){
+        flex-wrap: wrap;
+    }
     iframe{
         width: 100%;
     }
