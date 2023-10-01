@@ -3,10 +3,15 @@ nav{
     background:rgb(6, 153, 156);
     height: 12vh;
     width: 100%;
+    @include responsive ('tablet'){
+        margin-right: -10;
+    }
+    @include responsive('mobile'){
+        height: 10vh;
+    }
     display: flex;
     justify-content: space-between;
     z-index: 1000;
-    background: rgb(6, 153, 156);
     position: fixed;
     top: 0;
     .logo {
@@ -17,6 +22,12 @@ nav{
             width: 125px;
             height: 55px;
             margin-left: 50px;
+            @include responsive ('mobile'){
+                width: 115px;
+                height: 50px;
+                margin-left: 0px;
+            
+            }
         }
     }
     ul{
@@ -30,6 +41,12 @@ nav{
         a{
             text-transform: uppercase;
             color: rgb(17, 16, 16);
+            @include responsive('tablet'){
+                font-size: 15px;
+            }
+            @include responsive('mobile'){
+                font-size: 10px;
+            }
             &:hover{
                 background: red;
                 padding: 4px;
@@ -38,4 +55,5 @@ nav{
             }
         }
     }
+    
 }
