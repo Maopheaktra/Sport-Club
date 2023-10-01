@@ -6,23 +6,37 @@
     h2{
         text-transform: uppercase;
         text-align: center;
+    
     }
     .card-value{
         margin: 15px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        @include responsive ('tablet'){
+            margin: 10px;
+            flex-wrap: wrap;
+        }
         .card{
-            margin-top: 10px;
             width: 20%;
-            height: 40vh;
+            height: 35vh;
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
             background: whitesmoke;
             border-radius: 20px;
+            @include responsive('tablet'){
+                margin: 10px;
+                width: 40%;
+            }
+            @include responsive('mobile'){
+                width: 90%;
+            }
             p{
-                padding: 20px;
+                padding: 10px;
+            }
+            span{
+                text-transform: uppercase;
             }
         }
     }
