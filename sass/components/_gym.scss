@@ -17,7 +17,7 @@
             }
             @include responsive('mobile'){
                 width: 100%;
-                height: 90vh;
+                height: 40vh;
             }
         }
 
@@ -28,31 +28,32 @@
         margin: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         @include responsive('tablet'){
             margin: 20px;
         }
         @include responsive('mobile'){
-            margin: 10px;
+            margin: 15px;
         }
         p{  
             padding: 20px;
         }
         .card {
             margin: 20px;
-            width: 100%;
+            width: 80%;
             height: 50vh;
             display: flex;
             justify-content: space-around;
             border-radius: 20px;
             @include responsive ('tablet'){
-                width: 90%;
-                height: 55vh;
+                margin: 5px;
+                width: 100%;
+                height: 25vh;
             }
             @include responsive ('mobile'){
+                margin: 20px;
                 width: 80%;
-                height: 90vh;
+                height: 80vh;
                 flex-direction: column;
                 align-items: center;
             }
@@ -63,15 +64,12 @@
                 border-radius: 20px;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
                 @include responsive('tablet'){
-                    margin-left: 10px;
-                    margin-top: 30px;
-                    width: 230px;
-                    height: 40vh;
+                    width: 300px;
+                    height: 25vh;
                 }
                 @include responsive('mobile'){
-                    margin-top : 2px;
                     width: 250px;
-                    height: 35vh;
+                    height: 30vh;
                 }
 
             }
@@ -81,11 +79,10 @@
                 display: flex;
                 flex-direction: column;
                @include responsive('tablet'){
-                    margin-top: 10px;
+                    margin-top: 5px;
                     padding: 5px;
                }
                 @include responsive('mobile'){
-                    margin-top: 0px;
                     padding: 5px;
                 }
                 h2 {
@@ -121,12 +118,14 @@
                     color:black;
                     border-radius: 10px;
                     @include responsive('tablet'){
+                        margin-left: 300px;
                         margin-top: 2px;
                         text-align: right;
                         padding: 5px;
                     }
                     @include responsive('mobile'){
-                        padding: 5px;
+                        margin-left: 80px;
+                        padding: 18x;
                         text-align: center;
                     }
                 }
@@ -142,11 +141,7 @@
 
         .card:nth-child(even) {
             flex-direction: row-reverse;
-            @include responsive('tablet'){
-                img{
-                    margin-right: 10px;
-                }
-            }
+            
             @include responsive('mobile'){
                 flex-direction: column;
             }
