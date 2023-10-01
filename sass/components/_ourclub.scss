@@ -10,9 +10,14 @@
             margin: 5px;
             width: 11.70%;
             height: 25vh;
-            
-        }
-    
-        
+            @include responsive('tablet'){
+                width: 23.67%;
+                height: 30vh;
+            }
+            @include responsive('mobile'){
+                width: 47.20%;
+                height: 25vh;
+            }
+        }   
     }
 }

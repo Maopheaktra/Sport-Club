@@ -15,9 +15,18 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 1000;
-  background: rgb(6, 153, 156);
   position: fixed;
   top: 0;
+}
+@media screen and (max-width: 860px) {
+  nav {
+    margin-right: -10;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav {
+    height: 10vh;
+  }
 }
 nav .logo {
   flex: 1;
@@ -28,6 +37,13 @@ nav .logo img {
   width: 125px;
   height: 55px;
   margin-left: 50px;
+}
+@media screen and (max-width: 560px) {
+  nav .logo img {
+    width: 115px;
+    height: 50px;
+    margin-left: 0px;
+  }
 }
 nav ul {
   flex: 2;
@@ -41,6 +57,16 @@ nav ul li {
 nav ul a {
   text-transform: uppercase;
   color: rgb(17, 16, 16);
+}
+@media screen and (max-width: 860px) {
+  nav ul a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav ul a {
+    font-size: 10px;
+  }
 }
 nav ul a:hover {
   background: red;
@@ -430,7 +456,7 @@ iframe .google-map > h1 {
   #sport .sport-content .card {
     margin: 10px;
     width: 80%;
-    height: 25rem;
+    height: 20rem;
   }
 }
 #sport .sport-content .card img {
@@ -451,6 +477,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card img {
+    width: 100%;
     height: 100%;
   }
 }
@@ -471,7 +498,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card h2 {
-    padding: 20px;
+    padding: 10px;
   }
 }
 #sport .sport-content .card p,
@@ -513,14 +540,16 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   #sport .sport-content .card:nth-child(7) {
-    width: 75%;
-    margin-right: 200px;
+    margin: 5px;
+    width: 40%;
+    height: 30rem;
   }
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card:nth-child(7) {
-    width: 82%;
-    margin-left: 0px;
+    margin: 10px;
+    width: 80%;
+    height: 25rem;
   }
 }
 #sport .sport-content .card:nth-child(8) {
@@ -528,14 +557,16 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   #sport .sport-content .card:nth-child(8) {
-    width: 75%;
-    margin-left: 0px;
+    margin: 5px;
+    width: 40%;
+    height: 30rem;
   }
 }
-@media screen and (max-width: 860px) and (max-width: 560px) {
+@media screen and (max-width: 560px) {
   #sport .sport-content .card:nth-child(8) {
-    width: 82%;
-    margin-left: 0px;
+    margin: 10px;
+    width: 80%;
+    height: 25rem;
   }
 }
 
@@ -562,7 +593,11 @@ iframe .google-map > h1 {
 @media screen and (max-width: 560px) {
   #gym .gymtop img {
     width: 100%;
+<<<<<<< HEAD
     height: 90vh;
+=======
+    height: 40vh;
+>>>>>>> 8d075bf6847850368bc6aa0ef18fd7fdc9f4db04
   }
 }
 
@@ -570,7 +605,6 @@ iframe .google-map > h1 {
   margin: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 @media screen and (max-width: 860px) {
@@ -580,7 +614,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   .gyms {
-    margin: 10px;
+    margin: 15px;
   }
 }
 .gyms p {
@@ -588,7 +622,7 @@ iframe .google-map > h1 {
 }
 .gyms .card {
   margin: 20px;
-  width: 100%;
+  width: 80%;
   height: 50vh;
   display: flex;
   justify-content: space-around;
@@ -596,14 +630,16 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   .gyms .card {
-    width: 90%;
-    height: 55vh;
+    margin: 5px;
+    width: 100%;
+    height: 25vh;
   }
 }
 @media screen and (max-width: 560px) {
   .gyms .card {
+    margin: 20px;
     width: 80%;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;
     align-items: center;
   }
@@ -616,17 +652,14 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   .gyms .card img {
-    margin-left: 10px;
-    margin-top: 30px;
-    width: 230px;
-    height: 40vh;
+    width: 300px;
+    height: 25vh;
   }
 }
 @media screen and (max-width: 560px) {
   .gyms .card img {
-    margin-top: 2px;
     width: 250px;
-    height: 35vh;
+    height: 30vh;
   }
 }
 .gyms .card .card-content {
@@ -637,13 +670,12 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   .gyms .card .card-content {
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 5px;
   }
 }
 @media screen and (max-width: 560px) {
   .gyms .card .card-content {
-    margin-top: 0px;
     padding: 5px;
   }
 }
@@ -687,6 +719,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   .gyms .card .card-content a {
+    margin-left: 300px;
     margin-top: 2px;
     text-align: right;
     padding: 5px;
@@ -694,7 +727,8 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   .gyms .card .card-content a {
-    padding: 5px;
+    margin-left: 80px;
+    padding: 18x;
     text-align: center;
   }
 }
@@ -704,11 +738,6 @@ iframe .google-map > h1 {
 }
 .gyms .card:nth-child(even) {
   flex-direction: row-reverse;
-}
-@media screen and (max-width: 860px) {
-  .gyms .card:nth-child(even) img {
-    margin-right: 10px;
-  }
 }
 @media screen and (max-width: 560px) {
   .gyms .card:nth-child(even) {
@@ -749,6 +778,19 @@ iframe .google-map > h1 {
   margin-top: 150px;
   margin-left: 100px;
 }
+@media screen and (max-width: 860px) {
+  .homepag {
+    margin-top: 330px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .homepag {
+    font-size: 15px;
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+}
 .homepag:hover {
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
@@ -759,6 +801,7 @@ button {
   height: 40px;
   border-radius: 8px;
   margin-top: 20px;
+  margin: 10px;
 }
 button:hover {
   background: red;
@@ -779,17 +822,31 @@ button:hover li a {
 }
 #about .abouttop {
   display: flex;
-  gap: 10px;
+  align-items: center;
+}
+@media screen and (max-width: 560px) {
+  #about .abouttop {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #about .abouttop .abouttopleft {
-  background: rgb(230, 223, 223);
-  border-radius: 8px;
   display: flex;
+  flex-direction: column;
   flex: 1;
-  height: 30vh;
+}
+#about .abouttop .abouttopleft .aboutbb1 {
+  background: rgb(230, 223, 223);
+  display: flex;
+  align-items: center;
   border-radius: 8px;
   padding: 20px;
   margin: 20px;
+}
+@media screen and (max-width: 860px) {
+  #about .abouttop .abouttopleft .aboutbb1 {
+    flex: 1;
+  }
 }
 #about .abouttop .abouttopright {
   background: rgb(230, 223, 223);
@@ -801,6 +858,15 @@ button:hover li a {
   align-items: center;
   padding: 20px;
   margin: 20px;
+}
+@media screen and (max-width: 860px) {
+  #about .abouttop .abouttopright {
+    flex: 1;
+    height: 30vh;
+  }
+  #about .abouttop .abouttopright img {
+    width: 100%;
+  }
 }
 #about .mis-vis {
   display: flex;
@@ -1045,6 +1111,18 @@ body .group .card img {
   margin: 5px;
   width: 11.7%;
   height: 25vh;
+}
+@media screen and (max-width: 860px) {
+  .our-club .ourimg img {
+    width: 23.67%;
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 560px) {
+  .our-club .ourimg img {
+    width: 47.2%;
+    height: 25vh;
+  }
 }
 
 .video {
