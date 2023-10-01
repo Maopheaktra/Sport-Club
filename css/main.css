@@ -431,7 +431,7 @@ iframe .google-map > h1 {
   #sport .sport-content .card {
     margin: 10px;
     width: 80%;
-    height: 25rem;
+    height: 20rem;
   }
 }
 #sport .sport-content .card img {
@@ -452,6 +452,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card img {
+    width: 100%;
     height: 100%;
   }
 }
@@ -472,7 +473,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card h2 {
-    padding: 20px;
+    padding: 10px;
   }
 }
 #sport .sport-content .card p,
@@ -568,11 +569,6 @@ iframe .google-map > h1 {
   #gym .gymtop img {
     width: 100%;
     height: 40vh;
-  }
-}
-@media screen and (max-width: ) {
-  #gym .gymtop {
-    height: 50vh;
   }
 }
 
