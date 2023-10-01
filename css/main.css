@@ -97,7 +97,7 @@ nav ul a:hover {
   flex-direction: column;
   display: flex;
   width: 50%;
-  height: 5%;
+  height: 75%;
   padding: 5px 4px;
   max-width: 550px;
   border-radius: 15px;
@@ -593,11 +593,7 @@ iframe .google-map > h1 {
 @media screen and (max-width: 560px) {
   #gym .gymtop img {
     width: 100%;
-<<<<<<< HEAD
-    height: 90vh;
-=======
     height: 40vh;
->>>>>>> 8d075bf6847850368bc6aa0ef18fd7fdc9f4db04
   }
 }
 
