@@ -596,16 +596,6 @@ iframe .google-map > h1 {
     height: 40vh;
   }
 }
-@media screen and (max-width: ) {
-  #gym .gymtop {
-    height: 50vh;
-  }
-}
-@media screen and (max-width: ) {
-  #gym .gymtop {
-    height: 50vh;
-  }
-}
 
 .gyms {
   margin: 50px;
