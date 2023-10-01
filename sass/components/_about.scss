@@ -11,20 +11,27 @@
 
     .abouttop {
         display: flex;
-        gap: 10px;
-
-        .abouttopleft {
-            background: rgb(230, 223, 223);
-            border-radius: 8px;
+        align-items: center;
+        @include responsive ('mobile'){
             display: flex;
-            flex: 1;
-            height: 30vh;
-            border-radius: 8px;
-            
-            padding: 20px;
-            margin: 20px;
+            flex-direction: column;
         }
-
+        .abouttopleft {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            .aboutbb1{
+                background: rgb(230, 223, 223);
+                display: flex;
+                align-items: center;
+                border-radius: 8px; 
+                padding: 20px;
+                margin: 20px;
+                @include responsive('tablet'){
+                    flex: 1;
+                }
+            }
+        }
         .abouttopright {
             background: rgb(230, 223, 223);
             display: flex;
@@ -35,6 +42,14 @@
             align-items: center;
             padding: 20px;
             margin: 20px;
+            @include responsive('tablet'){
+                flex: 1;
+                height: 30vh;
+                img{
+                    width: 100%;
+                    
+                }
+            }
             
         }
     }
