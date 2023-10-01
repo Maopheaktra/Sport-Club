@@ -11,6 +11,10 @@
         padding: 10px;
         height: 100%;
         width: 190vh;
+
+        @include responsive('tablet') {
+            height: 50%;
+        }
     }
 
     form {
@@ -18,10 +22,22 @@
         flex-direction: column;
         display: flex;
         width: 50%;
-        height: 75%;
+        height: 68%;
         padding: 5px 4px;
         max-width: 550px;
         border-radius: 15px;
+
+        @include responsive('tablet') {
+            width: 45%;
+            height: 132%;
+            margin-top: 50%;
+        }
+
+        @include responsive('mobile') {
+            width: 35%;
+            height: 135%;
+            margin-top: 40%;
+        }
     }
 
     form h2 {
@@ -29,7 +45,9 @@
         color: black;
         margin-bottom: 5px;
         margin: 5px;
+
     }
+    
 
     form h2:hover {
         color: #e65b00;
@@ -42,13 +60,11 @@
     form input {
         width: 92.8%;
         height: 15px;
-
     }
 
     .user-club,
     .user-member {
         margin-bottom: 10px;
-
     }
 
     select {
@@ -59,6 +75,11 @@
         padding: 10px;
         margin-top: 10px;
         border-radius: 10px;
+
+        @include responsive('mobile') {
+            width: 89%;
+            margin-left: 25px;
+        }
     }
 
     form input,
@@ -71,12 +92,19 @@
         font-size: 16px;
         border-radius: 10px;
 
+        @include responsive('mobile') {
+            width: 80%;
+            margin-left: 25px;
+        }
     }
 
     textarea {
         width: 92.8%;
         margin-top: 15px;
 
+        @include responsive('mobile') {
+            width: 80%;
+        }
     }
 
     form button {
@@ -88,7 +116,6 @@
         border-radius: 10px;
         width: 30%;
         margin-left: 35%;
-
     }
 
     form button a {
@@ -105,10 +132,7 @@
 
         color: white;
     }
-
-
 }
-
 iframe {
     width: 100%;
 
@@ -126,6 +150,16 @@ iframe {
         width: 600px;
         height: 400px;
         margin-top: 20px;
+
+        @include responsive('tablet') {
+            width: 100%;
+            height: 10%;
+        }
+
+        @include responsive('mobile') {
+            width: 100%;
+            height: 60%;
+        }
     }
 
     .google-map>h1 {
