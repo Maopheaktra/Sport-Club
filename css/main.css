@@ -78,15 +78,14 @@ nav ul a:hover {
 #contact-us {
   display: flex;
   height: 155vh;
-  margin-top: 0;
 }
 #contact-us .contact-box {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  height: 100%;
-  width: 190vh;
+  height: 90%;
+  width: 165vh;
 }
 @media screen and (max-width: 860px) {
   #contact-us .contact-box {
@@ -98,22 +97,22 @@ nav ul a:hover {
   flex-direction: column;
   display: flex;
   width: 50%;
-  height: 68%;
+  height: 75%;
   padding: 5px 4px;
   max-width: 550px;
   border-radius: 15px;
 }
 @media screen and (max-width: 860px) {
   #contact-us form {
-    width: 45%;
-    height: 132%;
+    width: 30%;
+    height: 77%;
     margin-top: 50%;
   }
 }
 @media screen and (max-width: 560px) {
   #contact-us form {
-    width: 35%;
-    height: 135%;
+    width: 25%;
+    height: 115%;
     margin-top: 40%;
   }
 }
@@ -149,7 +148,7 @@ nav ul a:hover {
 @media screen and (max-width: 560px) {
   #contact-us select {
     width: 89%;
-    margin-left: 25px;
+    margin-left: 15px;
   }
 }
 #contact-us form input,
@@ -165,8 +164,8 @@ nav ul a:hover {
 @media screen and (max-width: 560px) {
   #contact-us form input,
   #contact-us textarea {
-    width: 80%;
-    margin-left: 25px;
+    width: 77%;
+    margin-left: 15px;
   }
 }
 #contact-us textarea {
@@ -175,7 +174,7 @@ nav ul a:hover {
 }
 @media screen and (max-width: 560px) {
   #contact-us textarea {
-    width: 80%;
+    width: 77%;
   }
 }
 #contact-us form button {
@@ -219,7 +218,7 @@ iframe .gmap_iframe {
 @media screen and (max-width: 860px) {
   iframe .gmap_iframe {
     width: 100%;
-    height: 10%;
+    height: 5%;
   }
 }
 @media screen and (max-width: 560px) {
@@ -244,12 +243,12 @@ iframe .google-map > h1 {
 @media screen and (max-width: 860px) {
   #footer {
     flex-wrap: wrap;
-    height: 90vh;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 560px) {
   #footer {
-    height: 115vh;
+    height: 120vh;
     flex-wrap: wrap;
   }
 }
@@ -278,7 +277,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   #footer .footer-left p {
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
   }
 }
@@ -302,7 +301,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   #footer .footer-center h2 {
-    font-size: 20px;
+    font-size: 27px;
     text-align: center;
   }
 }
@@ -338,7 +337,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   #footer .footer-center span {
-    font-size: 19px;
+    font-size: 20px;
     justify-content: space-evenly;
   }
 }
@@ -366,7 +365,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 860px) {
   #footer h2 {
-    font-size: 20px;
+    font-size: 27px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -457,7 +456,7 @@ iframe .google-map > h1 {
   #sport .sport-content .card {
     margin: 10px;
     width: 80%;
-    height: 25rem;
+    height: 20rem;
   }
 }
 #sport .sport-content .card img {
@@ -478,6 +477,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card img {
+    width: 100%;
     height: 100%;
   }
 }
@@ -498,7 +498,7 @@ iframe .google-map > h1 {
 }
 @media screen and (max-width: 560px) {
   #sport .sport-content .card h2 {
-    padding: 20px;
+    padding: 10px;
   }
 }
 #sport .sport-content .card p,
